@@ -46,8 +46,8 @@ class CreditCard
 end
 ```
 3. Results from running `bundle exec ruby spec/luhn_spec.rb` and `ruby bench/luhn_bench.rb`:
-[correctness test](img/luhn_imgs/luhn_spec.png)
-[benchmarking](img/luhn_imgs/direct_luhn_bench.png)
+![correctness test](img/luhn_imgs/luhn_spec.png)
+![benchmarking](img/luhn_imgs/direct_luhn_bench.png)
 
 ### Some thoughts for Part A:
 The implementation for `luhn_validor.rb` can be further optimized with:
@@ -66,7 +66,7 @@ module LuhnValidator
 end
 ```
 and its benchmark:
-[optimized luhn](img/luhn_imgs/optimized_luhn_bench.png)
+![optimized luhn](img/luhn_imgs/optimized_luhn_bench.png)
 
 ## B. Substitution and Transposition Ciphers
 
