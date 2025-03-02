@@ -1,12 +1,13 @@
 # Credit Card Crypto
-*Disclaimer: All Ruby code in this repository has passed `rubocop` formatting checks. Any offenses suggested were rectified immediately.*
+> **Name:** Syaheer Altaf (阿爾塔夫)  
+*Disclaimer: All Ruby code in this repository has passed `rubocop` formatting checks. Any suggested offenses were corrected immediately.*
 
 ## A. Luhn Algorithm
 <!-- markdownlint-disable ol-prefix -->
 
 1. Implementation of `luhn_validator.rb` ([see](luhn_validator.rb)):
 
-```
+```ruby
 module LuhnValidator
   def validate_checksum
     nums_a = @number.to_s.chars.map(&:to_i)
@@ -21,7 +22,7 @@ end
 ```
 
 2. Implementation of `credit_card.rb` (the code snippet necessary for the current week) ([see](credit_card.rb)):
-```
+```ruby
 class CreditCard
   include LuhnValidator
   attr_accessor :number, :expiration_date, :owner, :credit_network
@@ -51,7 +52,7 @@ end
 
 ### Some thoughts for Part A:
 The implementation for `luhn_validor.rb` can be further optimized with:
-```
+```ruby
 module LuhnValidator
   def validate_checksum
     sum = 0
